@@ -1,4 +1,5 @@
-# Demo 01 - Pairwise
+# Demo-uri
+## Demo 01 - Pairwise
 ```
 [INPUT]
 A: CTCAAAA
@@ -17,7 +18,7 @@ TTTC-CCC
   Score=2
 ```
 
-# Demo 02 - Distance Matrix
+## Demo 02 - Distance Matrix
 ```
 pair,hamming,p_distance,len_used
 NM_000546.6-NM_011640.3,1286,0.7221,1781
@@ -25,12 +26,18 @@ NM_000546.6-NM_131327.2,1681,0.7528,2233
 NM_011640.3-NM_131327.2,1293,0.7260,1781
 ```
 
-# Exercitiu 1 - Global Alignment
+# Livrabile
+```
+1. Am folosit TP53.
+2. Alinierea globala este de preferat atunci cand secventele comparate sunt similare pe toata lungimea lor, iar alinierea globala atunci cand secventele au doar regiuni similare semnificative.
+```
+
+## Exercitiu 1 - Global Alignment
 ```
 Nu pot rula, Codespaces termina procesul, iar daca rulez local, VS Code da crash. 
 ```
 
-# Exercitiu 2 - Local Alignment
+## Exercitiu 2 - Local Alignment
 ```
 Nu pot rula, Codespaces termina procesul, iar daca rulez local, VS Code da crash. 
 ```
