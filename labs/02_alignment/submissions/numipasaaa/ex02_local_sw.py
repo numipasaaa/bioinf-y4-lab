@@ -12,7 +12,7 @@ TODO:
   - Scoring celulelor (match, mismatch, gap, cu max(0,...)).
 
 Exemplu Rulare:
-  python labs/02_alignment/ex03_local_sw.py --fasta data/work/<handle>/lab01/my_tp53.fa --i1 0 --i2 1
+  python labs/02_alignment/submissions/numipasaaa/ex02_local_sw.py --fasta data/work/numipasaaa/lab01/my_tp53.fa --i1 0 --i2 1
 """
 
 from pathlib import Path
@@ -125,6 +125,8 @@ def main():
         raise SystemExit(f"[eroare] Nu găsesc fișierul: {fasta_path}")
 
     s1, s2, id1, id2 = load_two_sequences(fasta_path, args.i1, args.i2)
+    new_len = min(len(s1), len(s2), 8192)
+    s1, s2 = s1[:new_len], s2[:new_len]
     a1, a2, sc = smith_waterman(s1, s2)
 
     print("=== Aliniere locală (SW) ===")

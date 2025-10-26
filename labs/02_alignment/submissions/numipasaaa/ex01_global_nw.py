@@ -141,6 +141,8 @@ def main():
         raise SystemExit(f"[eroare] Nu găsesc fișierul: {fasta_path}")
 
     s1, s2, id1, id2 = load_two_sequences(fasta_path, args.i1, args.i2)
+    new_len = min(len(s1), len(s2), 8192)
+    s1, s2 = s1[:new_len], s2[:new_len]
     a1, a2, sc = needleman_wunsch(s1, s2)
 
     print("=== Aliniere globală (NW) ===")
